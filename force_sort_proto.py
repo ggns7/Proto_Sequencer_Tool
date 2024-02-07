@@ -19,7 +19,7 @@ if __name__ == "__main__":
 	selectedFile = getInput
 
 	try:
-		with open('benim_item_proto.txt', 'rb') as file:
+		with open(files[selectedFile], 'rb') as file:
 			readFile = []
 			for line in file.readlines():
 				text = line.decode('euc_kr', errors='ignore')
